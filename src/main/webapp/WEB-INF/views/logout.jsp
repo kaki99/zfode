@@ -2,14 +2,14 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>LogOut</title>
 </head>
 <body>
 <h1>
-	Hello world!  
+	log out
 </h1>
 
 <!--P>  The time on the server is ${serverTime}. </P-->
-<P>  this is a Spring Framework 5. msg: ${msg}</P>
+<P>  Good luck!! Spring Framework 5. </P>
 </body>
 </html>
