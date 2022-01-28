@@ -5,6 +5,7 @@
 .metadata
 bin/
 tmp/
+target/
 *.tmp
 *.bak
 *.swp
@@ -94,9 +95,6 @@ hs_err_pid*
 replay_pid*
 
 ### Maven ###
-target/
-target/m2e-wtp/
-target/classes/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
