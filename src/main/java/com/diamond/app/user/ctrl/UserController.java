@@ -1,5 +1,10 @@
 package com.diamond.app.user.ctrl;
 
+import java.sql.Connection;
+
+import javax.inject.Inject;
+import javax.sql.DataSource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +17,9 @@ import com.diamond.app.user.model.vo.UserVO;
 @Controller
 public class UserController {
 	
+	@Inject
+	private DataSource dataSource;
+	
 	/**
 	 * @param dto
 	 * @return String
@@ -20,6 +28,16 @@ public class UserController {
 	public String login(UserDTO dto) {
 		System.out.println("controller login");
 		System.out.println("UserDTO: " + dto);
+		
+		try {
+			Connection conn = (Connection) dataSource.getConnection();
+			System.out.println("success conn: " + conn);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("fail..!");
+			e.printStackTrace();
+		}
+		
 		return "home";
 	}
 	
