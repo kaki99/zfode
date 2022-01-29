@@ -3,14 +3,11 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>LogOut</title>
+	<title>index</title>
 </head>
 <body>
-<h1>
-	log out
-</h1>
-
-<!--P>  The time on the server is ${serverTime}. </P-->
-<P>  Good luck!! Spring Framework 5. </P>
+	<script type="text/javascript">
+		location.href="main.do";
+	</script>
 </body>
 </html>

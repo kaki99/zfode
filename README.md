@@ -7,3 +7,5 @@
 	http://localhost:8090/app/join.do
 	http://localhost:8090/app/search.do
 	http://localhost:8090/app/ajax.do
+	
+	http://localhost:8090/app/loginForm.do
