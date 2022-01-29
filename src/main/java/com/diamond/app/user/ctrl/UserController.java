@@ -32,6 +32,6 @@ public class UserController {
 			// 데이터 유효시간이 request되는 페이지에만 유효하다.
 			session.setAttribute("loginUser", user);
 		}
-		return null;
+		return "redirect:/main.do";
 	}
 }
