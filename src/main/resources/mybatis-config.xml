@@ -6,5 +6,6 @@
 	<typeAliases>
 		<typeAlias type="com.diamond.app.user.model.vo.UserDTO" alias="userdto" />
 		<typeAlias type="com.diamond.app.user.model.vo.UserVO" alias="uservo" />
+		<typeAlias type="com.diamond.app.board.model.vo.BoardVO" alias="board" />
 	</typeAliases>
 </configuration>

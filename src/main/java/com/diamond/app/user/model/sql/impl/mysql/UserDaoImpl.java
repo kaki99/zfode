@@ -21,7 +21,7 @@ public class UserDaoImpl implements UserDao {
 		System.out.println("user dao loginRow: " + obj);
 		System.out.println("user dao session: " + session);
 
-		// testMapper.xml의 login에 해당되는 부분을 실행하고 객체를 받는다.
+		// UserMapper.xml의 login에 해당되는 부분을 실행하고 객체를 받는다.
 		Object result = session.selectOne(PREFIX + ".login", obj);
 		System.out.println("dao loginRow result : " + result);
 		return result;
