@@ -23,6 +23,32 @@
 	
 	<context:component-scan base-package="com.diamond.app" />
 	
-	
+	<beans:bean id="common" class="com.diamond.app.interceptor.CustomInterceptor"/>
+	<beans:bean id="login" class="com.diamond.app.interceptor.util.LoginInterceptor"/>
+	<beans:bean id="sessionCheck" class="com.diamond.app.interceptor.util.SessionChkInterceptor" />
+	<beans:bean id="logout" class="com.diamond.app.interceptor.util.LogoutInterceptor" />
+	<interceptors>
+		<interceptor>
+			<!-- <mapping path="/**"/> -->
+			<mapping path="/interceptor.do"/>
+			<beans:ref bean="common"/>
+		</interceptor>
+		<interceptor>
+			<mapping path="/login.do"/>
+			<beans:ref bean="login"/>
+		</interceptor>
+		<interceptor>
+			<mapping path="/registerForm.do" />
+			<beans:ref bean="sessionCheck" />
+		</interceptor>
+		<interceptor>
+			<mapping path="/logout.do" />
+			<beans:ref bean="logout" />
+		</interceptor>
+		<interceptor>
+            <mapping path="/**"/>
+            <beans:bean id="subInterceptor" class="com.diamond.app.interceptor.SubInterceptor"/>
+        </interceptor>
+	</interceptors>
 	
 </beans:beans>

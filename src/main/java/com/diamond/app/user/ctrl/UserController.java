@@ -1,9 +1,8 @@
 package com.diamond.app.user.ctrl;
 
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -23,15 +22,33 @@ public class UserController {
 		return "user/login";
 	}
 
+//	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+//	public String login(UserDTO dto, HttpSession session) { // 단순 데이터라면 session이 아닌 Model model을 이용하면 된다.
+//		System.out.println("user login dto : " + dto);
+//		Object user = service.login(dto);
+//		if (user != null) {
+//			// model.addAttribute("loginSession", user);
+//			// 데이터 유효시간이 request되는 페이지에만 유효하다.
+//			session.setAttribute("loginUser", user);
+//		}
+//		return "redirect:/main.do";
+//	}
+
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public String login(UserDTO dto, HttpSession session) { // 단순 데이터라면 session이 아닌 Model model을 이용하면 된다.
+	public void login(UserDTO dto, Model model) { // 단순 데이터라면 session이 아닌 Model model을 이용하면 된다.
 		System.out.println("user login dto : " + dto);
 		Object user = service.login(dto);
 		if (user != null) {
 			// model.addAttribute("loginSession", user);
-			// 데이터 유효시간이 request되는 페이지에만 유효하다.
-			session.setAttribute("loginUser", user);
+			model.addAttribute("loginUserModel", user);
 		}
+//		return "redirect:/main.do";
+	}
+
+	@RequestMapping("/logout.do")
+	public String logout() {
+		System.out.println("user logout");
 		return "redirect:/main.do";
 	}
+
 }

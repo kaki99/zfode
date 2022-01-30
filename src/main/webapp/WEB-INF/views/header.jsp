@@ -5,7 +5,6 @@
 <html>
 <head>
 <title>header</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
 	<!-- sing in add -->
@@ -16,5 +15,6 @@
 			</a>
 		</li>
 	</c:if>
+	<a href="/user/logout.do" class="btn btn-default btn-flat">Sign out</a>
 </body>
 </html>
