@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- DL -->
+	<bean id="helloDao" class="com.diamond.app.hello.dao.HelloDao" />
+	<bean id="anotherDAO" class="com.diamond.app.hello.dao.AnotherDao" />
+	<bean id="helloService" class="com.diamond.app.hello.svc.HelloService">
+		<!-- setter DI: name: setter이름 등록, ref: 실제 주입할 객체 -->
+		<!-- <property name="helloDao" ref="helloDao"/> -->
+		<!-- constructor DI -->
+		<!-- <constructor-arg ref="helloDao"/> -->
+		<property name="helloDao" ref="helloDao"/>
+		<property name="anotherDao" ref="anotherDao"/>
+	</bean>
+</beans>
