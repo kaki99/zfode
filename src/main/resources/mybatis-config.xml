@@ -4,8 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.diamond.app.user.model.vo.UserDTO" alias="userdto" />
-		<typeAlias type="com.diamond.app.user.model.vo.UserVO" alias="uservo" />
-		<typeAlias type="com.diamond.app.board.model.vo.BoardVO" alias="board" />
+		<typeAlias type="com.diamond.app.user.vo.UserDTO" alias="userdto" />
+		<typeAlias type="com.diamond.app.user.vo.UserVO" alias="uservo" />
+		<typeAlias type="com.diamond.app.board.vo.BoardVO" alias="board" />
 	</typeAliases>
 </configuration>

@@ -1,10 +1,10 @@
-package com.diamond.app.user.model.sql.impl.mysql;
+package com.diamond.app.user.dao.impl.mysql;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.diamond.app.user.model.sql.UserDao;
+import com.diamond.app.user.dao.UserDao;
 
 //DB와 연동시킨다.
 //매개변수가 없어도 되지만, 넣어주는 게 좋다.

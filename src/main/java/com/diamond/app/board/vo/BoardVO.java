@@ -1,4 +1,4 @@
-package com.diamond.app.board.model.vo;
+package com.diamond.app.board.vo;
 
 import java.sql.Date;
 

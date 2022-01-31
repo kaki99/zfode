@@ -1,4 +1,4 @@
-package com.diamond.app.board.model.sql;
+package com.diamond.app.board.dao;
 
 import java.util.HashMap;
 import java.util.List;

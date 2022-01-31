@@ -1,4 +1,4 @@
-package com.diamond.app.user.model.vo;
+package com.diamond.app.user.vo;
 
 public class UserDTO {
 

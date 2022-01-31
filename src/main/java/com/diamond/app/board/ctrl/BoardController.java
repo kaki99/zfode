@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.diamond.app.board.model.vo.BoardVO;
 import com.diamond.app.board.svc.BoardService;
+import com.diamond.app.board.vo.BoardVO;
 
 @Controller
 public class BoardController {

@@ -3,7 +3,7 @@ package com.diamond.app.user.svc.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.diamond.app.user.model.sql.UserDao;
+import com.diamond.app.user.dao.UserDao;
 import com.diamond.app.user.svc.UserService;
 
 /**

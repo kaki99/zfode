@@ -6,8 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.diamond.app.user.model.vo.UserDTO;
 import com.diamond.app.user.svc.UserService;
+import com.diamond.app.user.vo.UserDTO;
 
 @Controller
 public class UserController {
