@@ -5,7 +5,7 @@
 
 	<!-- DL -->
 	<bean id="helloDao" class="com.diamond.app.hello.dao.HelloDao" />
-	<bean id="anotherDAO" class="com.diamond.app.hello.dao.AnotherDao" />
+	<bean id="anotherDao" class="com.diamond.app.hello.dao.AnotherDao" />
 	<bean id="helloService" class="com.diamond.app.hello.svc.HelloService">
 		<!-- setter DI: name: setter이름 등록, ref: 실제 주입할 객체 -->
 		<!-- <property name="helloDao" ref="helloDao"/> -->

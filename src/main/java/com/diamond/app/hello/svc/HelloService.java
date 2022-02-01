@@ -32,7 +32,7 @@ public class HelloService {
 		this.helloDao = helloDao;
 	}
 
-	public void setAnotherDAO(AnotherDao anotherDao) {
+	public void setAnotherDao(AnotherDao anotherDao) {
 		this.anotherDao = anotherDao;
 	}
 
